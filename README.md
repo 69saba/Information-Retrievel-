@@ -9,7 +9,7 @@
   * [1- INSTALLING VISUAL WEB RIPPER](https://github.com/69saba/README/edit/main/README.md#1-installing-visual-web-ripper)
   * [a- Data Extraction Using Visual Web Ripper and Recipes Script](https://github.com/69saba/README/edit/main/README.md#a-data-extraction-using-visual-web-ripper-and-recipes-script)
    * [b- Recipe Schema and Naming Conventions](https://github.com/69saba/README/edit/main/README.md#b-recipe-schema-and-naming-conventions)
-   * [RECIPE MODELS](https://github.com/69saba/README/edit/main/README.md#recipe-models)
+   * [RECIPE TABLE FIELD](https://github.com/69saba/README/edit/main/README.md#recipe-models)
    *  [EXTRACTION CHALLENGES](https://github.com/69saba/README/edit/main/README.md#extraction-challenges)
    *  [SOLUTIONS TO EXTRACTION CHALLENGES](https://github.com/69saba/README/edit/main/README.md#solutions-to-extraction-challenges)
    *  [2- Steps of Data Transformation](https://github.com/69saba/README/edit/main/README.md#2-steps-of-data-transformation) 
@@ -234,8 +234,8 @@ After the file has been successfully uploaded, we move towards the next phase wh
 ### b-	Recipe Schema and Naming Conventions
 Throughout our journey of exploring recipes, we have come across various constituents of recipes, each of them enhancing their outlook and essence. The elements a recipe comprises, bestow a sense of soul to it. The core recipe constituents we have gathered so far and also mentioned in the provided schema are mentioned as follows:
 
-## RECIPE MODELS
-While exploring recipes, the models of recipes we see never remain consistent. Studying a wide range of models and inspecting those models side by side, I would like to mention the commonly occurring models below:
+## RECIPE TABLE FIELD
+While exploring recipes, the table field of recipes we see never remain consistent. Studying a wide range of fields and inspecting those field side by side, I would like to mention the commonly occurring field below:
 *	Recipes by Category
 *	Recipes by Ingredients
 *	Recipes by Regions
