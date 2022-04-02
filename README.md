@@ -122,81 +122,81 @@ some example of extracted website links:
 * Asideofsweet.xml
 * Asideofsweet.sql
 24. Amandascookin.com
-Amandascookin.rip
-Amandascookin.xml
-Amandascookin.sql
+* Amandascookin.rip
+* Amandascookin.xml
+* Amandascookin.sql
 25. Drinksecrets.com
-Drinksecrets.rip
-Drinksecrets.xml
-Drinksecrets.sql
+* Drinksecrets.rip
+* Drinksecrets.xml
+* Drinksecrets.sql
 26. vegancoach.com
-Vegancoach.rip
-Vegancoach.xml
-Vegancoach.sql
+* Vegancoach.rip
+* Vegancoach.xml
+* Vegancoach.sql
 27. bernardin.ca
-Bernardin.rip
-Bernardin.sql
-Bernardin.xml
+* Bernardin.rip
+* Bernardin.sql
+* Bernardin.xml
 28. chickenofthesea.com
-Chickenofthesea.rip
-Chickenofthesea.xml
-Chickenofthesea.sql
+* Chickenofthesea.rip
+* Chickenofthesea.xml
+* Chickenofthesea.sql
 29. crisco.com
-Crisco.rip
-Crisco.xml
-Crisco.sql
+* Crisco.rip
+* Crisco.xml
+* Crisco.sql
 30. foodchannel.com
-Foodchannel.rip
-Foodchannel.xml
-Foodchannel.sql
+* Foodchannel.rip
+* Foodchannel.xml
+* Foodchannel.sql
 31. https://www.mygourmetconnection.com/recipe-index/
-Mygourmetconnection.rip
-Mygourmetconnection.xml
-Mygourmetconnection.sql
+* Mygourmetconnection.rip
+* Mygourmetconnection.xml
+* Mygourmetconnection.sql
 32. http://heatherchristo.com/ done
-Heatherchristo.rip
-Heatherchristo.xml
-Heatherchristo.sql
+* Heatherchristo.rip
+* Heatherchristo.xml
+* Heatherchristo.sql
 33. http://mexican-authentic-recipes.com/ done
-Mexican-authentic-recipes.rip
-Mexican-authentic-recipes.xml
-Mexican-authentic-recipes.sql
+* Mexican-authentic-recipes.rip
+* Mexican-authentic-recipes.xml
+* Mexican-authentic-recipes.sql
 34. kindredcocktails.com
-Kindredcocktails.rip
-Kindredcocktails.xml
-Kindredcocktails.sql
+* Kindredcocktails.rip
+* Kindredcocktails.xml
+* Kindredcocktails.sql
 35. makesushi.com
-Makesushi.rip
-Makesushi.xml
-Makesushi.sql
+* Makesushi.rip
+* Makesushi.xml
+* Makesushi.sql
 36. marialiberati.com
-Marialiberati.rip
-Marialiberati.xml
-Marialiberati.sql
+* Marialiberati.rip
+* Marialiberati.xml
+* Marialiberati.sql
 37. kitchenkonfidence.com
-Kitchenkonfidence.rip
-Kitchenkonfidence.xml
-Kitchenkonfidence.sql
+* Kitchenkonfidence.rip
+* Kitchenkonfidence.xml
+* Kitchenkonfidence.sql
 38. chocolatealchemy.com
-Chocolatealchemy.rip
-Chocolatealchemy.xml
-Chocolatealchemy.sql
+* Chocolatealchemy.rip
+* Chocolatealchemy.xml
+* Chocolatealchemy.sql
 39. thebrewerandthebaker.com
-Thebrewerandthebaker.rip
-Thebrewerandthebaker.xml
-Thebrewerandthebaker.sql
+* Thebrewerandthebaker.rip
+* Thebrewerandthebaker.xml
+* Thebrewerandthebaker.sql
 40. robinhood.ca
-Robinhood.rip
-Robinhood.xml
-Robinhood.sql
+* Robinhood.rip
+* Robinhood.xml
+* Robinhood.sql
 41. bbqqueens.com
-Bbqqueens.rip
-Bbqqueens.xml
-Bbqqueens.sql
+* Bbqqueens.rip
+* Bbqqueens.xml
+* Bbqqueens.sql
 42. steamingpot.com
-Steamingpot.rip
-Steamingpot.xml
-Steamingpot.sql
+* Steamingpot.rip
+* Steamingpot.xml
+* Steamingpot.sql
 
 
 
