@@ -24,8 +24,181 @@ Information retrieval is dependent on a user's queries. To make the document mor
 To evolve various recipes over the internet we need some way to collect all the recipe data. The technique we imply to gather all the recipe relevant data is data extraction and the tool we use for this purpose is Visual Web Ripper.
 ## 1-	INSTALLING VISUAL WEB RIPPER
 Visual Web Ripper is a powerful web page scraper used to easily extract website data, such as product catalogs, classifieds, financial web sites or any other web site that contains information you may Excel, MySQL db file, SQL Lite db file.
+Install visual web ripper through this link: https://download.cnet.com/Visual-Web-Ripper/3000-2381_4-10754835.html,
+and SQlLite link is https://sqlitestudio.pl/.
 ### a-	Data Extraction Using Visual Web Ripper and Recipes Script
 Recipes Script generates out .rip file. In the script, we define the recipe model if present for the website. For script generation and execution of it according to requirements, we follow a specified schema that assists us in every step of data extraction and how we structure it during extraction for late use.First, we give it a template Page Area and save it,next we give it a Link that would help us continue to the next page and name them as “recipeCategoryList” and “recipeCategory” respectively. 
+some example of extracted website links:
+1. http://tablefortwoblog.com
+tablefortwoblog.rip
+tablefortwoblog.xml
+tablefortwoblog.sql
+2. http://beckysbestbites.com
+beckysbestbites.rip
+beckysbestbites.xml
+beckysbestbites.sql
+3. https://amyshealthybaking.com
+amyshealthybaking.rip
+amyshealthybaking.xml
+amyshealthybaking.sql
+4. https://cupcakeproject.com
+cupcakeproject.rip
+cupcakeproject.xml
+cupcakeproject.sql
+5. https://sweetpeasandsaffron.com
+sweetpeasandsaffron.rip
+sweetpeasandsaffron.xml
+sweetpeasandsaffron.sql
+6. https://tasteandtellblog.com
+tasteandtellblog.rip
+tasteandtellblog.xml
+tasteandtellblog.sql
+7. https://Sugarfreemom.com
+Sugarfreemom.rip
+Sugarfreemom.xml
+Sugarfreemom.sql
+8. https://Loveandlemons.com
+Loveandlemons.rip
+Loveandlemons.xml
+Loveandlemons.sql
+9. https://onceuponafoodblog.com
+Onceuponafoodblog.rip
+Onceuponafoodblog.xml
+Onceuponafoodblog.sql
+10. Thefoodblog.com
+Thefoodblog.rip
+Thefoodblog.xml
+Thefoodblog.sql
+11. perfectsmoothie.com
+Perfectsmoothie.rip
+Perfectsmoothie.xml
+Perfectsmoothie.sql
+12. Thelastfoodblog.com
+Thelastfoodblog.rip
+Thelastfoodblog.xml
+Thelastfoodblog.sql
+13. Balancedbites.com
+Balancedbites.rip
+Balancedbites.xml
+Balancedbites.sql
+14. Brownedbutterblondie.com
+Brownedbutterblondie.rip
+Brownedbutterblondie.xml
+Brownedbutterblondie.sql
+15. Cookingandcooking.com
+Cookingandcooking.rip
+Cookingandcooking.xml
+Cookingandcooking.sql
+16. Balancedbites.com
+Balancedbites.rip
+Balancedbites.xml
+Balancedbites.sql
+17. Mymoroccanfood.com
+Mymoroccanfood.rip
+Mymoroccanfood.xml
+Mymoroccanfood.sql
+18. Myfoodbook.com
+Myfoodbook.rip
+Myfoodbook.sql
+Myfoodbook.xml
+19. Iamafoodblog.co.uk
+Iamafoodblog.rip
+Iamafoodblog.xml
+Iamafoodblog.sql
+20. Gonnawantseconds.com
+Gonnawantseconds.rip
+Gonnawantseconds.xml
+Gonnawantseconds.sql
+21. Donnahay.com
+Donnahay.rip
+Donnahay.xml
+Donnahay.sql
+22. Bakedbyanintrovert.com
+Bakedbyanintrovert.rip
+Bakedbyanintrovert.xml
+Bakedbyanintrovert.sql
+23. Asideofsweet.com
+Asideofsweet.rip
+Asideofsweet.xml
+Asideofsweet.sql
+24. Amandascookin.com
+Amandascookin.rip
+Amandascookin.xml
+Amandascookin.sql
+25. Drinksecrets.com
+Drinksecrets.rip
+Drinksecrets.xml
+Drinksecrets.sql
+26. vegancoach.com
+Vegancoach.rip
+Vegancoach.xml
+Vegancoach.sql
+27. bernardin.ca
+Bernardin.rip
+Bernardin.sql
+Bernardin.xml
+28. chickenofthesea.com
+Chickenofthesea.rip
+Chickenofthesea.xml
+Chickenofthesea.sql
+29. crisco.com
+Crisco.rip
+Crisco.xml
+Crisco.sql
+30. foodchannel.com
+Foodchannel.rip
+Foodchannel.xml
+Foodchannel.sql
+31. https://www.mygourmetconnection.com/recipe-index/
+Mygourmetconnection.rip
+Mygourmetconnection.xml
+Mygourmetconnection.sql
+32. http://heatherchristo.com/ done
+Heatherchristo.rip
+Heatherchristo.xml
+Heatherchristo.sql
+33. http://mexican-authentic-recipes.com/ done
+Mexican-authentic-recipes.rip
+Mexican-authentic-recipes.xml
+Mexican-authentic-recipes.sql
+34. kindredcocktails.com
+Kindredcocktails.rip
+Kindredcocktails.xml
+Kindredcocktails.sql
+35. makesushi.com
+Makesushi.rip
+Makesushi.xml
+Makesushi.sql
+36. marialiberati.com
+Marialiberati.rip
+Marialiberati.xml
+Marialiberati.sql
+37. kitchenkonfidence.com
+Kitchenkonfidence.rip
+Kitchenkonfidence.xml
+Kitchenkonfidence.sql
+38. chocolatealchemy.com
+Chocolatealchemy.rip
+Chocolatealchemy.xml
+Chocolatealchemy.sql
+39. thebrewerandthebaker.com
+Thebrewerandthebaker.rip
+Thebrewerandthebaker.xml
+Thebrewerandthebaker.sql
+40. robinhood.ca
+Robinhood.rip
+Robinhood.xml
+Robinhood.sql
+41. bbqqueens.com
+Bbqqueens.rip
+Bbqqueens.xml
+Bbqqueens.sql
+42. steamingpot.com
+Steamingpot.rip
+Steamingpot.xml
+Steamingpot.sql
+
+
 
 ![image](https://user-images.githubusercontent.com/96038471/156801914-810e6114-98a8-4473-8c59-4e480db3592b.png)
 
