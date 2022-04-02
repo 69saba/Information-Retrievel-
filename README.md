@@ -224,7 +224,7 @@ Next comes the extraction. We will extract the website by running our project. I
 
 ![image](https://user-images.githubusercontent.com/96038471/156802799-046b6c72-4954-4431-b8b3-60b0a6f45ef0.png)
 
-Extracting the website successfully isn’t the end of our work. After the extraction is done wgar we will do is that using its database file titled “internal.db”.
+Extracting the website successfully isn’t the end of our work. After the extraction is done, we will do is that using its database file titled “internal.db”.
 
 ![image](https://user-images.githubusercontent.com/96038471/156802836-a43357ef-26f5-43d9-a43a-4b6d6aa4dce0.png)
 
