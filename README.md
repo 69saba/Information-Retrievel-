@@ -9,7 +9,7 @@
   * [1- INSTALLING VISUAL WEB RIPPER](https://github.com/69saba/README/edit/main/README.md#1-installing-visual-web-ripper)
   * [a- Data Extraction Using Visual Web Ripper and Recipes Script](https://github.com/69saba/README/edit/main/README.md#a-data-extraction-using-visual-web-ripper-and-recipes-script)
    * [b- Recipe Schema and Naming Conventions](https://github.com/69saba/README/edit/main/README.md#b-recipe-schema-and-naming-conventions)
-   * [RECIPE TABLE FIELD](https://github.com/69saba/README/edit/main/README.md#recipe-models)
+   * [RECIPE TABLE FIELD](https://github.com/69saba/Information-Retrievel-/blob/main/README.md#recipe-table-field)
    *  [EXTRACTION CHALLENGES](https://github.com/69saba/README/edit/main/README.md#extraction-challenges)
    *  [SOLUTIONS TO EXTRACTION CHALLENGES](https://github.com/69saba/README/edit/main/README.md#solutions-to-extraction-challenges)
    *  [2- Steps of Data Transformation](https://github.com/69saba/README/edit/main/README.md#2-steps-of-data-transformation) 
