@@ -24,11 +24,11 @@ Information retrieval is dependent on a user's queries. To make the document mor
 To evolve various recipes over the internet we need some way to collect all the recipe data. The technique we imply to gather all the recipe relevant data is data extraction and the tool we use for this purpose is Visual Web Ripper.
 ## 1-	INSTALLING VISUAL WEB RIPPER
 Visual Web Ripper is a powerful web page scraper used to easily extract website data, such as product catalogs, classifieds, financial web sites or any other web site that contains information you may Excel, MySQL db file, SQL Lite db file.
-Install visual web ripper through this link: https://download.cnet.com/Visual-Web-Ripper/3000-2381_4-10754835.html,
-and SQlLite link is https://sqlitestudio.pl/.
+# Install visual web ripper through this link: https://download.cnet.com/Visual-Web-Ripper/3000-2381_4-10754835.html
+# SQlLite link: https://sqlitestudio.pl/
 ### a-	Data Extraction Using Visual Web Ripper and Recipes Script
 Recipes Script generates out .rip file. In the script, we define the recipe model if present for the website. For script generation and execution of it according to requirements, we follow a specified schema that assists us in every step of data extraction and how we structure it during extraction for late use.First, we give it a template Page Area and save it,next we give it a Link that would help us continue to the next page and name them as “recipeCategoryList” and “recipeCategory” respectively. 
-some example of extracted website links:
+## Some examples of extracted files links:
 1. http://tablefortwoblog.com
 * tablefortwoblog.rip
 * tablefortwoblog.xml
@@ -153,11 +153,11 @@ some example of extracted website links:
 * Mygourmetconnection.rip
 * Mygourmetconnection.xml
 * Mygourmetconnection.sql
-32. http://heatherchristo.com/ done
+32. http://heatherchristo.com/
 * Heatherchristo.rip
 * Heatherchristo.xml
 * Heatherchristo.sql
-33. http://mexican-authentic-recipes.com/ done
+33. http://mexican-authentic-recipes.com/ 
 * Mexican-authentic-recipes.rip
 * Mexican-authentic-recipes.xml
 * Mexican-authentic-recipes.sql
