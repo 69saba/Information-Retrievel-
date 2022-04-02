@@ -94,33 +94,33 @@ some example of extracted website links:
 * Balancedbites.xml
 * Balancedbites.sql
 17. Mymoroccanfood.com
-Mymoroccanfood.rip
-Mymoroccanfood.xml
-Mymoroccanfood.sql
+* Mymoroccanfood.rip
+* Mymoroccanfood.xml
+* Mymoroccanfood.sql
 18. Myfoodbook.com
-Myfoodbook.rip
-Myfoodbook.sql
-Myfoodbook.xml
+* Myfoodbook.rip
+* Myfoodbook.sql
+* Myfoodbook.xml
 19. Iamafoodblog.co.uk
-Iamafoodblog.rip
-Iamafoodblog.xml
-Iamafoodblog.sql
+* Iamafoodblog.rip
+* Iamafoodblog.xml
+* Iamafoodblog.sql
 20. Gonnawantseconds.com
-Gonnawantseconds.rip
-Gonnawantseconds.xml
-Gonnawantseconds.sql
+* Gonnawantseconds.rip
+* Gonnawantseconds.xml
+* Gonnawantseconds.sql
 21. Donnahay.com
-Donnahay.rip
-Donnahay.xml
-Donnahay.sql
+* Donnahay.rip
+* Donnahay.xml
+* Donnahay.sql
 22. Bakedbyanintrovert.com
-Bakedbyanintrovert.rip
-Bakedbyanintrovert.xml
-Bakedbyanintrovert.sql
+* Bakedbyanintrovert.rip
+* Bakedbyanintrovert.xml
+* Bakedbyanintrovert.sql
 23. Asideofsweet.com
-Asideofsweet.rip
-Asideofsweet.xml
-Asideofsweet.sql
+* Asideofsweet.rip
+* Asideofsweet.xml
+* Asideofsweet.sql
 24. Amandascookin.com
 Amandascookin.rip
 Amandascookin.xml
