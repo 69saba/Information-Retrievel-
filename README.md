@@ -34,65 +34,65 @@ some example of extracted website links:
 * tablefortwoblog.xml
 * tablefortwoblog.sql
 2. http://beckysbestbites.com
-beckysbestbites.rip
-beckysbestbites.xml
-beckysbestbites.sql
+* beckysbestbites.rip
+* beckysbestbites.xml
+* beckysbestbites.sql
 3. https://amyshealthybaking.com
-amyshealthybaking.rip
-amyshealthybaking.xml
-amyshealthybaking.sql
+* amyshealthybaking.rip
+* amyshealthybaking.xml
+* amyshealthybaking.sql
 4. https://cupcakeproject.com
-cupcakeproject.rip
-cupcakeproject.xml
-cupcakeproject.sql
+* cupcakeproject.rip
+* cupcakeproject.xml
+* cupcakeproject.sql
 5. https://sweetpeasandsaffron.com
-sweetpeasandsaffron.rip
-sweetpeasandsaffron.xml
-sweetpeasandsaffron.sql
+* sweetpeasandsaffron.rip
+* sweetpeasandsaffron.xml
+* sweetpeasandsaffron.sql
 6. https://tasteandtellblog.com
-tasteandtellblog.rip
-tasteandtellblog.xml
-tasteandtellblog.sql
+* tasteandtellblog.rip
+* tasteandtellblog.xml
+* tasteandtellblog.sql
 7. https://Sugarfreemom.com
-Sugarfreemom.rip
-Sugarfreemom.xml
-Sugarfreemom.sql
+* Sugarfreemom.rip
+* Sugarfreemom.xml
+* Sugarfreemom.sql
 8. https://Loveandlemons.com
-Loveandlemons.rip
-Loveandlemons.xml
-Loveandlemons.sql
+* Loveandlemons.rip
+* Loveandlemons.xml
+* Loveandlemons.sql
 9. https://onceuponafoodblog.com
-Onceuponafoodblog.rip
-Onceuponafoodblog.xml
-Onceuponafoodblog.sql
+* Onceuponafoodblog.rip
+* Onceuponafoodblog.xml
+* Onceuponafoodblog.sql
 10. Thefoodblog.com
-Thefoodblog.rip
-Thefoodblog.xml
-Thefoodblog.sql
+* Thefoodblog.rip
+* Thefoodblog.xml
+* Thefoodblog.sql
 11. perfectsmoothie.com
-Perfectsmoothie.rip
-Perfectsmoothie.xml
-Perfectsmoothie.sql
+* Perfectsmoothie.rip
+* Perfectsmoothie.xml
+* Perfectsmoothie.sql
 12. Thelastfoodblog.com
-Thelastfoodblog.rip
-Thelastfoodblog.xml
-Thelastfoodblog.sql
+* Thelastfoodblog.rip
+* Thelastfoodblog.xml
+* Thelastfoodblog.sql
 13. Balancedbites.com
-Balancedbites.rip
-Balancedbites.xml
-Balancedbites.sql
+* Balancedbites.rip
+* Balancedbites.xml
+* Balancedbites.sql
 14. Brownedbutterblondie.com
-Brownedbutterblondie.rip
-Brownedbutterblondie.xml
-Brownedbutterblondie.sql
+* Brownedbutterblondie.rip
+* Brownedbutterblondie.xml
+* Brownedbutterblondie.sql
 15. Cookingandcooking.com
-Cookingandcooking.rip
-Cookingandcooking.xml
-Cookingandcooking.sql
+* Cookingandcooking.rip
+* Cookingandcooking.xml
+* Cookingandcooking.sql
 16. Balancedbites.com
-Balancedbites.rip
-Balancedbites.xml
-Balancedbites.sql
+* Balancedbites.rip
+* Balancedbites.xml
+* Balancedbites.sql
 17. Mymoroccanfood.com
 Mymoroccanfood.rip
 Mymoroccanfood.xml
