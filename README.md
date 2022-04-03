@@ -187,7 +187,7 @@ Recipes Script generates out .rip file. In the script, we define the recipe mode
 * Thebrewerandthebaker.rip
 * Thebrewerandthebaker.xml
 * Thebrewerandthebaker.sql
-40. robinhood.ca
+40. robinhood.com
 * Robinhood.rip
 * Robinhood.xml
 * Robinhood.sql
