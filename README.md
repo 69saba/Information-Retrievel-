@@ -30,7 +30,7 @@ https://download.cnet.com/Visual-Web-Ripper/3000-2381_4-10754835.html
 https://sqlitestudio.pl/
 ### a-	Data Extraction Using Visual Web Ripper and Recipes Script
 Recipes Script generates out .rip file. In the script, we define the recipe model if present for the website. For script generation and execution of it according to requirements, we follow a specified schema that assists us in every step of data extraction and how we structure it during extraction for late use.First, we give it a template Page Area and save it,next we give it a Link that would help us continue to the next page and name them as “recipeCategoryList” and “recipeCategory” respectively. 
-## Some examples of extracted files links:
+## Some extracted files links:
 1. http://tablefortwoblog.com
 * tablefortwoblog.rip
 * tablefortwoblog.xml
@@ -200,7 +200,7 @@ Recipes Script generates out .rip file. In the script, we define the recipe mode
 * Steamingpot.xml
 * Steamingpot.sql
 
-
+### Procedure of Extraction 
 
 ![image](https://user-images.githubusercontent.com/96038471/156801914-810e6114-98a8-4473-8c59-4e480db3592b.png)
 
@@ -234,7 +234,7 @@ After the file has been successfully uploaded, we move towards the next phase wh
 ### b-	Recipe Schema and Naming Conventions
 Throughout our journey of exploring recipes, we have come across various constituents of recipes, each of them enhancing their outlook and essence. The elements a recipe comprises, bestow a sense of soul to it. The core recipe constituents we have gathered so far and also mentioned in the provided schema are mentioned as follows:
 
-## RECIPE TABLE FIELD
+### RECIPE TABLE FIELD
 While exploring recipes, the table field of recipes we see never remain consistent. Studying a wide range of fields and inspecting those field side by side, I would like to mention the commonly occurring field below:
 *	Recipes by Category
 *	Recipes by Ingredients
@@ -250,7 +250,7 @@ While exploring recipes, the table field of recipes we see never remain consiste
 *	Street Food
 *	Recipes by Everyday Meals
 
-## EXTRACTION CHALLENGES
+### EXTRACTION CHALLENGES
 The extraction process isn’t quite easy as it seems and we face several challenges throughout our journey. Some of these challenges are:
 *	The recipe content in our browser doesn’t appear in ripper. 
 *	An image has a different path than the others.
@@ -258,7 +258,7 @@ The extraction process isn’t quite easy as it seems and we face several challe
 *	Ingredients or Instructions appear in subheadings and those subheadings can only be selected as a single div.
 *	An ad appears in the ripper and we can’t casually treat web pages on ripper like we do in the browser.
 
-## SOLUTIONS TO EXTRACTION CHALLENGES
+### SOLUTIONS TO EXTRACTION CHALLENGES
 Let’s discuss solutions to the challenges we have been facing:
 *	If the content of the web page doesn’t appear in the ripper, we review the “tree view” of the page and compare it with its inspect mode.
 *	If an image has a different path, we inspect it in the browser and set its XPath manually.
@@ -406,32 +406,41 @@ UPDATE `VWR INTERNAL Whiteonricecouple recipes` set recipeCourse2 = CONCAT(recip
 UPDATE `VWR INTERNAL Balancedbites recipe` SET recipeCategory = REPLACE (recipeCategory,"Basics","");
 ```
 
-## 5-Meta Data
+## 5- Meta Data
+
 We use different queries as required during work on dataset. These queries as follow;
 
-###Creation Of Table
+### Creation Of Table
 CREATE TABLE `RecipeMeta` ( `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `metaOption` varchar(50) NOT NULL, `metaValueName` varchar(10000) DEFAULT NULL, `metaValue` mediumtext DEFAULT NULL, `metaValueId` int(11) DEFAULT NULL );
-###Name Quries
+
+### Name Quries
+
 Null Name:
+
 ```
 INSERT INTO `RecipeMeta` ( `metaOption`,`metaValue`) SELECT "nullName", COUNT(*) FROM `Recipes` WHERE `name` IS NULL OR `name`=""; 
 ```
 
 Distinct Names:
+
 ```
 INSERT INTO `RecipeMeta` ( `metaOption`,`metaValue`) SELECT "distName" , COUNT(DISTINCT `name`) FROM `Recipes`; 
 ``` 
 
 Most Occuring Name:
+
 ```
 INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`) SELECT "mostOccuringName" , `name`, COUNT(*) AS `value_occurrence` FROM `Recipes` GROUP BY `name` ORDER BY `value_occurrence` DESC LIMIT 1;
 ```
 
 Least Occurring Name:
+
+```
 INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`) SELECT "LeastOccuringName" ,  `name`, COUNT(*) AS `value_occurrence` FROM `Recipes` GROUP BY `name` ORDER BY `value_occurrence` ASC LIMIT 1; 
 ```
 
 Maximum lengthy name:
+
 ```
 INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`,`metaValueId`) SELECT "maxLenName" , `name`, MAX(LENGTH(`name`)) AS `MaxLen`,`id`  FROM `trial`.`Recipes` GROUP BY `name` ORDER BY `MaxLen` DESC LIMIT 1;
 ```
@@ -441,6 +450,7 @@ INSERT INTO `RecipeMeta`( metaOption, `metaValueName`,`metaValue`) SELECT "AnOpt
 ```
 
 Minimum lengthy name:
+
 ```
 INSERT INTO `RecipeMeta` ( `metaOption`,`metaValueName`,`metaValue`,`metaValueId`) SELECT "minLenName" , `name`, MAX(LENGTH(`name`)) AS `MinLen`,`id`  FROM `Recipes` GROUP BY `name` ORDER BY `MinLen` ASC LIMIT 1;
 ```
