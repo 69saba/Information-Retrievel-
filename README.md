@@ -15,6 +15,7 @@
    *  [2- Steps of Data Transformation](https://github.com/69saba/README/edit/main/README.md#2-steps-of-data-transformation) 
    *    [3- Steps for Data Consolidation](https://github.com/69saba/README/edit/main/README.md#3-steps-for-data-consolidation) 
    *    [4- Data Quality](https://github.com/69saba/README/edit/main/README.md#4-data-quality) 
+   *    [5- Meta Data](https://github.com/69saba/Information-Retrievel-/blob/main/README.md#5--meta-data)
    
 ## ABSTRACT
 The use of the Internet has fully-fledged intensely over the past few years. Information resources are available all over, both in internal networks and on the Internet. This progress represents an implausible means of information. The increasing amount of information requires information retrieval (IR) systems for users to access information efficiently. The main goal of Information Retrieval is to develop systems that would let users access all information resources available in the network. For this purpose we use (ETL) tools to extract data from multiple, assorted data sources, transform data, and finally load data into the database and data mining. Data quality is so important for accurate, complete, and efficient data to be provided to the user.
