@@ -311,7 +311,7 @@ Consistency: The data should have the data format as expected and can be cross r
 
 ![image](https://user-images.githubusercontent.com/96038471/156811352-c9e335e3-0a66-40b8-8df2-4b2d3ae7db16.png)
 
-We apply queries on these 3 column for data quality. Some important queries that are:
+We apply queries on these 3 column for data quality. Some most using queries that are:
 
 Replace value in a column:
 
@@ -335,6 +335,120 @@ Substring + Concatenate:
 ```
 UPDATE Table SET Col2= CONCAT( Col2, substring(Col1,position('Value' IN Col1), length) ),Col1 = "" WHERE Col1 LIKE "%Value%"
 ```
+
+Here we add further queries that we use during work on data quality:
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients`
+```
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients` WHERE LENGTH(recipeCourse)>0
+```
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients` WHERE LENGTH(recipeCuisine)>0
+```
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients` WHERE LENGTH(recipeCategory)>0
+```
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients` WHERE recipeCourse LIKE "%Breakfast%"
+```
+
+```
+SELECT recipeCourse,recipeCuisine,recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients` WHERE recipeCuisine LIKE "%Breakfast%"
+```
+
+```
+SELECT DISTINCT recipeCourse FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients`
+```
+
+```
+SELECT DISTINCT recipeCuisine FROM `VWR INTERNAL 100daysofrealfood1 serecipeIngredients`
+```
+
+```
+SELECT DISTINCT recipeCategory FROM `VWR INTERNAL 100daysofrealfood1 recipeIngredients`
+```
+
+```
+UPDATE `VWR INTERNAL 100daysofrealfood1 recipeIngredients` SET recipeCategory2 = recipeCourse WHERE recipeCourse LIKE "%Breakfast%"
+```
+
+```
+UPDATE `VWR INTERNAL 100daysofrealfood1 recipeIngredients` SET recipeCourse2 = recipeCategory recipeCourse WHERE recipeCourse LIKE "%Main Course%"
+```
+
+```
+SELECT substring(recipeCategory,position('Basics' in recipeCategory),+6);
+```
+
+```
+UPDATE `VWR INTERNAL Whiteonricecouple recipes` set recipeCourse2 = substring(recipeCategory,position('Basics' in recipeCategory),+6);
+```
+
+```
+SELECT substring(recipeCategory,1,position('votes' in recipeCategory)-1);
+```
+
+```
+UPDATE `VWR INTERNAL Whiteonricecouple recipes` set recipeCourse2 = substring(recipeCategory,1,position('votes' in recipeCategory)-1);
+```
+
+```
+UPDATE `VWR INTERNAL Whiteonricecouple recipes` set recipeCourse2 = CONCAT(recipeCourse2,substring(recipeCategory,position('Basics' in recipeCategory),+6)),recipeCuisine="" WHERE recipeCuisine LIKE "%Basics%";
+```
+
+```
+UPDATE `VWR INTERNAL Balancedbites recipe` SET recipeCategory = REPLACE (recipeCategory,"Basics","");
+```
+
+## 5-Meta Data
+We use different queries as required during work on dataset. These queries as follow;
+
+###Creation Of Table
+CREATE TABLE `RecipeMeta` ( `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `metaOption` varchar(50) NOT NULL, `metaValueName` varchar(10000) DEFAULT NULL, `metaValue` mediumtext DEFAULT NULL, `metaValueId` int(11) DEFAULT NULL );
+###Name Quries
+Null Name:
+```
+INSERT INTO `RecipeMeta` ( `metaOption`,`metaValue`) SELECT "nullName", COUNT(*) FROM `Recipes` WHERE `name` IS NULL OR `name`=""; 
+```
+
+Distinct Names:
+```
+INSERT INTO `RecipeMeta` ( `metaOption`,`metaValue`) SELECT "distName" , COUNT(DISTINCT `name`) FROM `Recipes`; 
+``` 
+
+Most Occuring Name:
+```
+INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`) SELECT "mostOccuringName" , `name`, COUNT(*) AS `value_occurrence` FROM `Recipes` GROUP BY `name` ORDER BY `value_occurrence` DESC LIMIT 1;
+```
+
+Least Occurring Name:
+INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`) SELECT "LeastOccuringName" ,  `name`, COUNT(*) AS `value_occurrence` FROM `Recipes` GROUP BY `name` ORDER BY `value_occurrence` ASC LIMIT 1; 
+```
+
+Maximum lengthy name:
+```
+INSERT INTO `RecipeMeta`( `metaOption`,`metaValueName`,`metaValue`,`metaValueId`) SELECT "maxLenName" , `name`, MAX(LENGTH(`name`)) AS `MaxLen`,`id`  FROM `trial`.`Recipes` GROUP BY `name` ORDER BY `MaxLen` DESC LIMIT 1;
+```
+
+```
+INSERT INTO `RecipeMeta`( metaOption, `metaValueName`,`metaValue`) SELECT "AnOption", NAME, MAX(LENGTH(NAME)) c FROM `Recipes` GROUP BY NAME ORDER BY c DESC LIMIT 1
+```
+
+Minimum lengthy name:
+```
+INSERT INTO `RecipeMeta` ( `metaOption`,`metaValueName`,`metaValue`,`metaValueId`) SELECT "minLenName" , `name`, MAX(LENGTH(`name`)) AS `MinLen`,`id`  FROM `Recipes` GROUP BY `name` ORDER BY `MinLen` ASC LIMIT 1;
+```
+
+```
+INSERT INTO `RecipeMeta`( metaOption, `metaValueName`,`metaValue`) SELECT "AnOption", NAME, MIN(LENGTH(NAME)) c FROM `Recipes` GROUP BY NAME ORDER BY c ASC LIMIT 1
+```
+
 
 
 
