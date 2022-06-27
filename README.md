@@ -411,7 +411,10 @@ UPDATE `VWR INTERNAL Balancedbites recipe` SET recipeCategory = REPLACE (recipeC
 We use different queries as required during work on dataset. These queries as follow;
 
 ### Creation Of Table
+
+```
 CREATE TABLE `RecipeMeta` ( `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `metaOption` varchar(50) NOT NULL, `metaValueName` varchar(10000) DEFAULT NULL, `metaValue` mediumtext DEFAULT NULL, `metaValueId` int(11) DEFAULT NULL );
+```
 
 ### Name Quries
 
@@ -458,7 +461,7 @@ INSERT INTO `RecipeMeta` ( `metaOption`,`metaValueName`,`metaValue`,`metaValueId
 ```
 INSERT INTO `RecipeMeta`( metaOption, `metaValueName`,`metaValue`) SELECT "AnOption", NAME, MIN(LENGTH(NAME)) c FROM `Recipes` GROUP BY NAME ORDER BY c ASC LIMIT 1
 ```
-
+As we work on "Name Column" same queries apply remaining other columns. 
 
 
 
