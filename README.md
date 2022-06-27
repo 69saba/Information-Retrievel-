@@ -315,20 +315,26 @@ We apply queries on these 3 column for data quality. Some important queries that
 
 Replace value in a column:
 
+```
 UPDATE Table  SET Col1 = REPLACE(Col1,"Value","")
+```
 
 Replace value in one column to another column:
 
+```
 UPDATE Table SET Col2=Col1 WHERE Col1 LIKE "%Value%"
+```
 
 Substring:
 
+```
 UPDATE  Table SET Col2 = substring(Col1 ,position('Value' in Col1), length)
+```
 
 Substring + Concatenate:
-
+```
 UPDATE Table SET Col2= CONCAT( Col2, substring(Col1,position('Value' IN Col1), length) ),Col1 = "" WHERE Col1 LIKE "%Value%"
-
+```
 
 
 
